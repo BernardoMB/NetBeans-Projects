@@ -1,0 +1,20 @@
+
+			2016-11-30
+
+
+				ALUMNOS DEL GRUPO MIO
+
+
+Guerrero{nombre=Casimiro Vazquez, edad=26, fuerza=3, herido=false}
+Guerrero{nombre=Jeremias Teofiles, edad=55, fuerza=6, herido=false}
+Guerrero{nombre=Jonas Costurero, edad=42, fuerza=7, herido=false}
+Guerrero{nombre=Jonas Noveo, edad=43, fuerza=8, herido=true}
+Guerrero{nombre=Masiosare Teofiles, edad=46, fuerza=3, herido=true}
+Guerrero{nombre=Romulo Juarez, edad=37, fuerza=9, herido=false}
+Guerrero{nombre=Romulo Perez, edad=23, fuerza=9, herido=true}
+Guerrero{nombre=Romulo Teofiles, edad=34, fuerza=9, herido=true}
+Guerrero{nombre=Sinforoso Juarez, edad=52, fuerza=5, herido=false}
+Guerrero{nombre=Teofilo Blanco, edad=27, fuerza=4, herido=false}
+Guerrero{nombre=Teofilo Costurero, edad=36, fuerza=7, herido=false}
+Guerrero{nombre=Tiburcio Costurero, edad=36, fuerza=4, herido=false}
+Guerrero{nombre=Tiburcio Tricornio, edad=32, fuerza=7, herido=false}

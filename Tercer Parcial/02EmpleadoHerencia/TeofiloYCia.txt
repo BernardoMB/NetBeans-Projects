@@ -1,0 +1,100 @@
+1002
+Casimiro Nieto
+12303.57
+2
+Chofer
+1008
+Sinforosa Perez
+45011.59
+2
+Recursos Humanos
+1004
+Romulo Ruiz
+68633.74
+2
+Chofer
+1017
+Casimiro Sanchez
+29498.28
+2
+Gerente
+1010
+Romulo Lopez
+7342.95
+1
+3559.87
+1007
+Romulo Sanchez
+5239.49
+1
+2004.68
+1016
+Masiosare Hernandez
+17914.67
+2
+Secretaria
+1015
+Masiosare Ruiz
+61987
+2
+Recursos Humanos
+1003
+Casimiro Hernandez
+46532.72
+2
+Contador
+1014
+Lupe Ruiz
+17126.6
+2
+Nomina
+1018
+Casimiro Ruiz
+55719.2
+2
+Sistemas
+1006
+Romulo Sanchez
+26888.17
+2
+Contador
+1011
+Teresa Martinez
+66834.79
+2
+Contador
+1012
+Anajo Ruiz
+10765.62
+2
+Recursos Humanos
+1000
+Teresa Lopez
+41408.38
+2
+Contador
+1009
+Romulo Sanchez
+45449.67
+2
+Recursos Humanos
+1019
+Juan Perez
+46707.42
+2
+Contador
+1001
+Sinforosa Hernandez
+18202.08
+2
+Intendencia
+1013
+Teofilo Hernandez
+45398.33
+2
+Contador
+1005
+Teofilo Garcia
+51407.14
+2
+Chofer

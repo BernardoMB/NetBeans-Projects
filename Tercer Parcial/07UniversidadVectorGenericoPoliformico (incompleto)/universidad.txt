@@ -1,0 +1,100 @@
+1400
+Torcuato Sanchez
+2
+13744.5
+9532.4
+2201
+Maria Sanchez
+1
+Actuaria
+6.9
+1502
+Fausto Suarez
+1
+Economia
+4.7
+7893
+Inigo Romero
+1
+Matematicas Aplicadas
+9.7
+9874
+Juan Lopez
+1
+Administracion
+3.2
+6105
+Inigo Hernandez
+1
+Administracion
+3.5
+7206
+Domitila Juarez
+1
+Contabilidad
+7.2
+1107
+Teresa Suarez
+2
+6768.01
+6768.01
+4108
+Teresa Tarso
+1
+Contabilidad
+0.5
+9209
+Maria Suarez
+2
+17376.73
+16720.71
+1010
+Torcuato Fernandez
+2
+19280.13
+11397.28
+1111
+Maria Tarso
+2
+13858.97
+11045.57
+2012
+Rigoberto Hernandez
+2
+18239.51
+12662.88
+3313
+Fausto Romero
+2
+19862.1
+12117.93
+1014
+Benita Vazquez
+2
+16961
+13580.08
+2515
+Inigo Sanchez
+2
+9763.78
+9763.78
+1016
+Benita Romero
+1
+Contabilidad
+9.8
+1717
+Juan Lopez
+1
+Ingenieria en Computacion
+9.1
+2818
+Benita Sanchez
+1
+Ingenieria en Computacion
+5.2
+1229
+Benita Romero
+2
+16493.97
+7700.06

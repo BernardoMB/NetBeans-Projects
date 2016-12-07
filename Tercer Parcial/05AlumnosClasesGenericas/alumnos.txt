@@ -1,0 +1,34 @@
+1234
+Juan Perez
+3
+6 8.2 9
+4321
+Maria del Carmen Vazquez
+0
+5566
+Rosario Robledo
+10
+8
+7
+6.5
+9
+7
+2
+10
+10
+9
+8.4
+7771
+Teofilo Tamez
+3
+9.2
+8.1
+7.4
+8989
+Romulo Remo
+2
+8 9.4
+6666
+Dionisio Zamudio
+4
+10 10 9 8.5

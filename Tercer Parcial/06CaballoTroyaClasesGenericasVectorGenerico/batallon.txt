@@ -1,0 +1,80 @@
+Romulo Teofiles
+35		
+2		
+1		
+Casimiro Vazquez
+26		
+3		
+1		
+Tiburcio Costurero
+36		
+4		
+1		
+Romulo Teofiles
+34		
+9		
+2		
+Masiosare Vazquez
+41		
+1		
+1		
+Jeremias Teofiles
+60		
+0		
+1		
+Teofilo Blanco
+27		
+4		
+1		
+Masiosare Perez
+18		
+9		
+2		
+Teofilo Tricornio
+48		
+1		
+1		
+Jeremias Teofiles
+55		
+6		
+1		
+Masiosare Teofiles
+46		
+3		
+2		
+Sinforoso Juarez
+52		
+5		
+1		
+Jonas Noveo
+43		
+8		
+2		
+Romulo Perez
+23		
+9		
+2		
+Masiosare Tricornio
+37		
+1		
+1		
+Tiburcio Tricornio
+32		
+7		
+1		
+Jonas Costurero
+42		
+7		
+1		
+Romulo Juarez
+37		
+9		
+1		
+Romulo Noveo
+43		
+0		
+1		
+Teofilo Costurero
+36		
+7		
+1		

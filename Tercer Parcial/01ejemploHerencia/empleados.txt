@@ -1,0 +1,99 @@
+1000
+Masiosare Perez 
+57093.75
+2
+Intendencia
+1001
+Anaho Garcia 
+63687.33
+2
+Intendencia
+1002
+Anaho Gomez 
+67692.77
+2
+Intendencia
+1003
+Teresa Hernandez 
+59112.33
+2
+Contador
+1004
+Anaho Gomez 
+77383.22
+2
+Contador
+1005
+Anaho Sanchez 
+42259.88
+2
+Intendencia
+1006
+Masiosare Perez 
+10935.12
+2
+Nomina
+1007
+Juan Gomez 
+29481.5
+2
+Intendencia
+1008
+Juan Gomez 
+78125.17
+2
+Chofer
+1009
+Teofilo Hernandez 
+7036.66
+2
+Chofer
+1010
+Sinforosa Hernandez 
+56783.88
+2
+Sistemas
+1011
+Teresa Flores 
+6227.34
+2
+Nomina
+1012
+Juan Nieto 
+20667.12
+2
+Chofer
+1013
+Luis Lopez 
+7430.23
+2
+Sistemas
+1014
+Teresa Ruis 
+73553.44
+2
+Nomina
+1015
+Sinforosa Nieto 
+63400
+2
+Chofer
+1016
+Masiosare Gomez 
+14235.18
+2
+Recursos Humanos
+1017
+Masiosare Garcia 
+53818.26
+2
+Secretario
+1018
+Masiosare Flores 
+50034.99
+2
+Nomina
+1019
+Masiosare Martinez 
+60651.04
+2

@@ -1,0 +1,27 @@
+2
+Taladro
+1000
+3
+Cubeta vinilica
+1200
+1
+Cemento
+1700
+1
+Varilla
+5200
+3
+Pasta muros
+800
+2
+Juego pinzas
+350
+1
+Grava
+800
+2
+Pulidora
+2500
+3
+Anticorrosivo
+700
