@@ -8,18 +8,17 @@ public class EmpleadoHerencia {
     public static final int DIM = 50;
     
     // vector de vendedores.
-    public static Vendedor ven[];
-    public static int nv;
+    public static Vendedor[] vendedores;
+    public static int nvend;
     
     // vector de administradores.
-    public static Administrativo adm[];
-    public static int na;
+    public static Administrativo[] administradores;
+    public static int nadmon;
     
     // vector de puestos.
-    public static int ndep[];
-    public static int nd;
-    
+    public static int[] numPuestos;
     public static String[] puestos;
+    public static int np; // numPuestos y puestos tendran siempre el mismo tamaño.
     
     public static void leeInfo() {
         Scanner lee;
@@ -27,44 +26,35 @@ public class EmpleadoHerencia {
         int clave;
         String nombre, puesto;
         double sueldo, ventas;
-        ven = new Vendedor[DIM];
-        adm = new Administrativo[DIM];
-        nv = 0;
-        na = 0;
+        vendedores = new Vendedor[DIM];
+        administradores = new Administrativo[DIM];
+        nvend = 0;
+        nadmon = 0;
         datos = new File("TeofiloYCia.txt");
-        try
-        {
+        try {
             lee = new Scanner(datos);
         }
-        catch(Exception e)
-        {
+        catch(Exception e) {
             lee = null;
         }
-        if (lee != null)
-        {
-            while (lee.hasNextInt())
-            {
+        if (lee != null) {
+            while (lee.hasNextInt()) {
                 clave = lee.nextInt();
                 lee.nextLine();
                 nombre = lee.nextLine();
                 sueldo = lee.nextDouble();
-                if (lee.nextInt() == 1)
-                {
+                if (lee.nextInt() == 1) {
                     ventas = lee.nextDouble();
-                    if (nv < DIM)
-                    {
-                        ven[nv] = new Vendedor(clave, nombre, sueldo, ventas);
-                        nv = nv + 1;
+                    if (nvend < DIM) {
+                        vendedores[nvend] = new Vendedor(clave, nombre, sueldo, ventas);
+                        nvend = nvend + 1; 
                     }
-                }
-                else
-                {
+                } else {
                     lee.nextLine();
                     puesto = lee.nextLine();
-                    if (na < DIM)
-                    {
-                        adm[na] = new Administrativo(clave, nombre, sueldo, puesto);
-                        na = na + 1;
+                    if (nadmon < DIM) {
+                        administradores[nadmon] = new Administrativo(clave, nombre, sueldo, puesto);
+                        nadmon = nadmon + 1;
                     }
                 }
             }
@@ -73,41 +63,16 @@ public class EmpleadoHerencia {
         
     }
     public static void imprimeTodos() {
-        for (int i = 0; i < nv; i++) {
-            System.out.println(ven[i]);
+        for (int i = 0; i < nvend; i++) {
+            System.out.println(vendedores[i]);
         }
-        for (int i = 0; i < na; i++) {
-            System.out.println(adm[i]);
+        for (int i = 0; i < nadmon; i++) {
+            System.out.println(administradores[i]);
         }    
-    }
-    public static void cuentaDepartamentos() {
-        int loc;
-        String puesto;
-        nd = 0;
-        puestos = new String[DIM];
-        ndep = new int [DIM];
-        for (int i = 0; i < na; i++) {
-            puesto = adm[i].getPuesto();
-            if (nd != 0) {
-                loc = buscaDepartamento(puesto);
-                if (loc != -1) {
-                    ndep[loc] = ndep[loc] + 1;
-                } else {
-                    puestos[nd] = puesto;
-                    ndep[nd] = 1;
-                    nd = nd + 1;
-                }  
-            } else {
-                puestos[nd] = puesto;
-                ndep[nd] = 1;
-                nd = nd + 1;
-            }
-                
-        }
     }
     public static int buscaDepartamento(String puesto) {
         int loc = 0;
-        while (loc < nd - 1 && puesto.compareTo(puestos[loc]) != 0) {
+        while (loc < np - 1 && puesto.compareTo(puestos[loc]) != 0) {
             loc++;
         }
         if (puesto.compareTo(puestos[loc]) != 0) {
@@ -115,10 +80,38 @@ public class EmpleadoHerencia {
         }
         return loc;
     }
+    public static void cuentaDepartamentos() {
+        int loc;
+        String puesto;
+        puestos = new String[DIM];
+        numPuestos = new int [DIM];
+        np = 0;
+        for (int i = 0; i < nadmon; i++) {
+            puesto = administradores[i].getPuesto();
+            if (np == 0) {
+                // numPuestos y puestos estan vacíos.
+                puestos[np] = puesto;
+                numPuestos[np] = 1;
+                np++;
+            } else {
+                // numPuestos y puestos no estan vacios entonces checa si puesto ya esta en el vector.
+                loc = buscaDepartamento(puesto);
+                if (loc != -1) {
+                    // Ya estaba.
+                    numPuestos[loc]++;
+                } else {
+                    // No estaba.
+                    puestos[np] = puesto;
+                    numPuestos[np] = 1;
+                    np++; // Muy importante.
+                }
+            }    
+        }
+    }
     public static void imprimePuestos() {
         System.out.println("\n\tPUESTOS:\n");
-        for (int i = 0; i < nd; i++) {
-            System.out.println(puestos[i] + ": " + ndep[i]);
+        for (int i = 0; i < np; i++) {
+            System.out.println(puestos[i] + ": " + numPuestos[i]);
         }
     }
     
