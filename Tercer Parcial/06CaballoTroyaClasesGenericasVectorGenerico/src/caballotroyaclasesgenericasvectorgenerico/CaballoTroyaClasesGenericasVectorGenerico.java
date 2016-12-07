@@ -11,6 +11,7 @@ public class CaballoTroyaClasesGenericasVectorGenerico {
 
     public static final int DIM = 30;
     public static Vector<Guerrero> batalla;
+    
     public static void leeInfo() {
         String nom;
         int edad, fuerza, tipo;
@@ -43,28 +44,31 @@ public class CaballoTroyaClasesGenericasVectorGenerico {
             lee.close();
         }
     }
-    
-     public static void creaReporte() {
+    public static void creaReporte() {
         FileOutputStream datos;
         PrintWriter esc;
         try {
             datos = new FileOutputStream("reporte.txt", false);
             esc = new PrintWriter(datos);
             esc.println("\n\t\t\t" + LocalDate.now());
-            esc.println("\n\n\t\t\t\tALUMNOS DEL GRUPO MIO\n");
+            esc.println("\n\n\t\t\t\tGUERREROS\n");
             esc.printf(batalla.toString());
             esc.close();
         } catch(Exception e) {
-            System.out.println("no se creo Reporte");
+            System.out.println("No se creo el reporte.");
         }
     }
     
     public static void main(String[] args) {
+        // Lee informacion e imprime.
         leeInfo();
-        System.out.println("\n\t\tGUERREROS DEL CABALLO DE TROYA\n" + batalla);
-        batalla.ordenaAscendente();
-        System.out.println("\nOrdenado:");
+        System.out.println("\n\t\tGUERREROS DEL CABALLO DE TROYA\n");
         System.out.println(batalla);
+        // Muestra el vector ordenado.
+        batalla.ordenaAscendente();
+        System.out.println("\n\t\tGUERREROS DEL CABALLO DE TROYA (Ordenado)\n");
+        System.out.println(batalla);
+        // Reporte.
         creaReporte();
     }
     

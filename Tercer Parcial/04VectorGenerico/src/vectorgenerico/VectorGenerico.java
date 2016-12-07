@@ -18,6 +18,10 @@ public class VectorGenerico {
         System.out.println(nums);
         System.out.println("\nEliminando 7: " + nums.bajaSinOrden(new Integer(7)));
         System.out.println(nums);
+        // Ordenando.
+        System.out.println("Ordenado:");
+        nums.ordenaAscendente();
+        System.out.println(nums);
     }
     
 }
