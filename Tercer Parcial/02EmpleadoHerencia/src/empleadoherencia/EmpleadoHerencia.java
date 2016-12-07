@@ -114,8 +114,7 @@ public class EmpleadoHerencia {
             System.out.println(puestos[i] + ": " + numPuestos[i]);
         }
     }
-    
-    
+
     // Mio
     // Para ordenar vendedores segun sus ventas.
     public static int minimoVend(int indice) {
@@ -127,12 +126,17 @@ public class EmpleadoHerencia {
         }
         return min;
     }
+    // Seleccion directa.
+    // Ordena el vector de menos a mayor.
     public static void ordenaVendedores() {
         int min;
         Vendedor aux;
         for (int i = 0; i < nvend - 1; i++) {
             min = minimoVend(i);
             if (i != min) {
+                // La posicion i no fue el minimo a partir de la posicion i.
+                
+                // Entonces cambialos de lugar.
                 aux = vendedores[i];
                 vendedores[i] = vendedores[min];
                 vendedores[min] = aux;
@@ -151,12 +155,17 @@ public class EmpleadoHerencia {
         }
         return min;
     }
+    // Seleccion directa.
+    // Ordena el vector de menos a mayor.
     public static void ordenaAdministradores() {
         int min;
         Administrativo aux;
         for (int i = 0; i < nadmon - 1; i++) {
             min = minimoAdmon(i);
             if (i != min) {
+                // La posicion i no fue el minimo a partir de la posicion i.
+                
+                // Entonces cambialos de lugar.
                 aux = administradores[i];
                 administradores[i] = administradores[min];
                 administradores[min] = aux;

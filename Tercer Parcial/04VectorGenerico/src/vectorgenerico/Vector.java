@@ -79,4 +79,37 @@ public class Vector <T> {
         return aux;
     }
     
+    // Obten el elemento en el indice i.
+    public T getElemento(int i) {
+        if (i < n) {
+            return vec[i];
+        } else {
+            return null;
+        }
+    }
+    
+    // Para ordenar.
+    // Devuelve el indice donde se encuentre el minimio a partir del int indice.
+    public int minimoIndice(int indice) {
+        int min = indice;
+        for (int i = indice + 1; i < n; i++) {
+            if (((Comparable)vec[i]).compareTo(vec[min]) < 0) {
+                min = i;
+            }
+        }
+        return min;
+    }
+    // Ordena el vector de menor a mayor.
+    public void ordenaAscendente() {
+        int min;
+        T aux;
+        for (int i = 0; i < n; i++) {
+            min = minimoIndice(i);
+            if (min != i) {
+                aux = vec[i];
+                vec[i] = vec[min];
+                vec[min] = aux;
+            }
+        }
+    }
 }

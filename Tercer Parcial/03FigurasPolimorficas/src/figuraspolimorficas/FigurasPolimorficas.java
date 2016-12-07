@@ -46,13 +46,13 @@ public class FigurasPolimorficas {
         for (int i = 0; i < n; i++) {
             if (fig[i] instanceof Cuadrado) {
                 System.out.println(i + "\tCuadrado: " + fig[i]);
-            } else {
+            } else if (fig[i] instanceof Circulo) { // No es necesario el else if, con el else basta.
                 System.out.println(i + "\tCirculo: " + fig[i]);
             }
         }
     }
     
-    // Regresa el inidice en donde se encuentre el minimo a partir de indice.
+    // Para ordenar el vector.
     public static int minimo(int indice) {
         int min = indice;
         for(int i = indice + 1; i < n; i++) {
@@ -62,17 +62,12 @@ public class FigurasPolimorficas {
         }
         return min;
     }
-    // Seleccion directa.
-    // Ordena el vector de menos a mayor.
     public static void ordenaVector() {
         int min;
         FiguraGeometrica aux;
         for(int i = 0; i < n - 1; i++) {
             min = minimo(i);
             if(i != min) {
-                // La posicion i no fue el minimo a partir de la posicion i.
-                
-                // Entonces cambialos de lugar.
                 aux = fig[min];
                 fig[min] = fig[i];
                 fig[i] = aux;
@@ -80,6 +75,7 @@ public class FigurasPolimorficas {
         }
     }
     
+    // Usando equals.
     public static void imprimeTipoDimension() {
         Scanner lee = new Scanner(System.in);
         
@@ -96,6 +92,23 @@ public class FigurasPolimorficas {
             }
         }
     }
+    // Usando compareTo.
+    public static void imprimeTipoDimension2() {
+        Scanner lee = new Scanner(System.in);
+        
+        System.out.print("Indica tipo: ");
+        int tipo = lee.nextInt();
+        System.out.print("Indica Dimension: ");
+        double dim = lee.nextDouble();
+        
+        for (int i = 0; i < n; i++) {
+            if (tipo == 1 && fig[i] instanceof Cuadrado && fig[i].compareTo(new FiguraGeometrica(dim)) == 0) {
+                System.out.println(fig[i]);
+            } else if (tipo == 2 && fig[i] instanceof Circulo && fig[i].compareTo(new FiguraGeometrica(dim)) == 0) {
+                System.out.println(fig[i]);
+            }
+        }
+    }
     
     public static void main(String[] args) {
         leeInfo();
@@ -104,7 +117,7 @@ public class FigurasPolimorficas {
         System.out.println("\n\tFIGURAS ORDENADAS\n");
         imprimeTodos();
         System.out.println("\n\tFILTRA POR TIPO Y DIMENSION\n");
-        imprimeTipoDimension();
+        imprimeTipoDimension2();
     }
     
 }
