@@ -13,7 +13,7 @@ public class Vector <T> {
     // Constructor.
     public Vector(int dim) {
         this.dim = dim;
-        n = 0;
+        this.n = 0;
         vec = (T[]) new Object[dim]; // La clase de objetos que guardará el vector vec los está casteando a T.
     }
     
