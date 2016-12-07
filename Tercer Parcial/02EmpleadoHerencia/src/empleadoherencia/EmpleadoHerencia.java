@@ -115,11 +115,64 @@ public class EmpleadoHerencia {
         }
     }
     
+    
+    // Mame
+    // Para ordenar vendedores segun sus ventas.
+    public static int minimoVend(int indice) {
+        int min = indice;
+        for (int i = indice + 1; i < nvend; i++) {
+            if (vendedores[min].compareTo(vendedores[i]) == 1) {
+                min = i;
+            }
+        }
+        return min;
+    }
+    public static void ordenaVendedores() {
+        int min;
+        Vendedor aux;
+        for (int i = 0; i < nvend - 1; i++) {
+            min = minimoVend(i);
+            if (i != min) {
+                aux = vendedores[i];
+                vendedores[i] = vendedores[min];
+                vendedores[min] = aux;
+            }
+        }
+    } 
+    
+    // Mame
+    // Para ordenar administradores segun su sueldo.
+    public static int minimoAdmon(int indice) {
+        int min = indice;
+        for (int i = indice + 1; i < nadmon; i++) {
+            if (administradores[i].compareTo(administradores[min]) < 0) {
+                min = i;
+            }
+        }
+        return min;
+    }
+    public static void ordenaAdministradores() {
+        int min;
+        Administrativo aux;
+        for (int i = 0; i < nadmon - 1; i++) {
+            min = minimoAdmon(i);
+            if (i != min) {
+                aux = administradores[i];
+                administradores[i] = administradores[min];
+                administradores[min] = aux;
+            }
+        }
+    }
+    
     public static void main(String[] args) {
         leeInfo();
         imprimeTodos();
         cuentaDepartamentos();
         imprimePuestos();
+        // Mame
+        ordenaVendedores();
+        ordenaAdministradores();
+        imprimeTodos();
     }
     
 }
