@@ -16,7 +16,7 @@ public class Empleado {
         return "\n\tClave: " + clave + "\n\tNombre: " + nombre + "\n\tSueldo: $" + (int)(sueldo * 100) / 100.0;
     }
     
-    // Mame
+    // Mio
     public int compareTo(Empleado empleado) {
         if (empleado.sueldo < this.sueldo) {
             return 1;
@@ -24,7 +24,7 @@ public class Empleado {
             if (empleado.sueldo == this.sueldo) {
                 return 0;
             } else {
-                return 1;
+                return -1;
             }
         }
     }

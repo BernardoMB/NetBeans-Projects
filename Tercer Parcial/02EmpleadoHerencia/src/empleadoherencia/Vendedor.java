@@ -12,7 +12,7 @@ public class Vendedor extends Empleado {
         return super.toString() + "\n\tVentas: $ " + (int)(ventas * 100) / 100.0;
     }
     
-    // Mame
+    // Mio
     public int compareTo(Vendedor vend) {
         if (vend.ventas > this.ventas) {
             return -1;

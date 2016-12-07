@@ -116,7 +116,7 @@ public class EmpleadoHerencia {
     }
     
     
-    // Mame
+    // Mio
     // Para ordenar vendedores segun sus ventas.
     public static int minimoVend(int indice) {
         int min = indice;
@@ -140,7 +140,7 @@ public class EmpleadoHerencia {
         }
     } 
     
-    // Mame
+    // Mio
     // Para ordenar administradores segun su sueldo.
     public static int minimoAdmon(int indice) {
         int min = indice;
@@ -169,7 +169,7 @@ public class EmpleadoHerencia {
         imprimeTodos();
         cuentaDepartamentos();
         imprimePuestos();
-        // Mame
+        // Mio
         ordenaVendedores();
         ordenaAdministradores();
         imprimeTodos();
