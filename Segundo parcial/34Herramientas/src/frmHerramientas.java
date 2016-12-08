@@ -328,7 +328,7 @@ public class frmHerramientas extends javax.swing.JFrame {
         try {
             // Para la lista de articulos.
             for (i = 0; i < this.txtArticulos.getModel().getSize(); i++) {
-                texto = (String) this.txtArticulos.getModel().getElementAt(i);
+                texto = (String)this.txtArticulos.getModel().getElementAt(i);
                 listaArt.add(i, texto);
             }
             listaArt.add(i,cad);
@@ -345,7 +345,7 @@ public class frmHerramientas extends javax.swing.JFrame {
             
             // Para la lista de precios. 
             for (i = 0; i < this.txtPrecios.getModel().getSize(); i++) {
-                texto = (String) this.txtPrecios.getModel().getElementAt(i);
+                texto = (String)this.txtPrecios.getModel().getElementAt(i);
                 listaPre.add(i, texto);
             }
             listaPre.add(i, precio + "");
@@ -382,7 +382,7 @@ public class frmHerramientas extends javax.swing.JFrame {
         this.lblCantidad.setText(cantidad + "");
         this.lblMonto.setText("$" + monto);
         this.lblIVA.setText("$" + (monto * .16));
-        this.lblTotal.setText("$" + (monto * 1.16));
+        this.lblTotal.setText("$" + (int)(monto * 1.16 * 100) / 100.0);
     }//GEN-LAST:event_btnCalculaTotalesActionPerformed
 
     private void btnLimpiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiaActionPerformed
