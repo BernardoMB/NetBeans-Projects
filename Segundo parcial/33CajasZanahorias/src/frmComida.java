@@ -7,9 +7,10 @@ import javax.swing.JOptionPane;
  */
 public class frmComida extends javax.swing.JFrame {
 
+    public int zanahorias[];
     public final int DIM = 50;
     public final int MAX = 100;
-    public int zanahorias[];
+    
     public int cajas, quiereComer;
     
     public void leeInfo(String nombre){

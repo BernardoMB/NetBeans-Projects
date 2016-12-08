@@ -13,8 +13,7 @@ public class Articulo {
     
     // toString.
     public String toString() {
-        return "\nTipo: " + tipo + "\nNombre: " + nombre + "\nPrecio: $"
-                + precio;
+        return "\nTipo: " + tipo + "\nNombre: " + nombre + "\nPrecio: $" + precio;
     }
     
     // compareTo.
